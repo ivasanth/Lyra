@@ -82,6 +82,9 @@ into the {body} of the default.hbs template --}}
                                     {{reading_time}}</span>
                             </div>
                         </section>
+                        {{#unless @member}}
+                            <a class="button primary small header-cta" href="/signup/">Follow</a>
+                        {{/unless}}
                         <div style="position: absolute; right:0px;">
                             <a class="social-link social-link-fb"
                                 href="https://facebook.com/sharer/sharer.php?u={{url absolute=true}}&quote={{title}}"
